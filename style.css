@@ -1,0 +1,57 @@
+/* Global */
+body {
+    font-family: "Poppins", sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  .navbar {
+    background-color: #333;
+    transition: background-color 0.5s;
+  }
+  .navbar a {
+    color: white !important;
+  }
+  .hero {
+    background: url("https://via.placeholder.com/1400x600") no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Products */
+  .productos .card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  .productos .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Buttons */
+  .btn:hover {
+    background-color: black !important;
+    color: white !important;
+  }
+  
+  /* Modo Oscuro */
+  body.modo-oscuro {
+    background-color: #222;
+    color: #ddd;
+  }
+  body.modo-oscuro .navbar {
+    background-color: #111;
+  }
+  body.modo-oscuro .card {
+    background-color: #333;
+    color: #ddd;
+  }
+  
